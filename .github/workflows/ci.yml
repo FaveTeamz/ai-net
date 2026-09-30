@@ -217,6 +217,9 @@ jobs:
       - name: TypeScript SDK — unit tests
         run: npm run test:unit
 
+      - name: ABI docs sync check
+        run: npm run docs:abi:check
+
       # ── Soroban contracts ─────────────────────────────────────────────
       - name: Cargo format check
         run: cargo fmt --all -- --check
